@@ -94,3 +94,22 @@ For example, $H(k, i) = h_1(k) + ih_2(k)$
 
 > [!IMPORTANT]
 > What is a good hash function?
+
+- Minimizes collisions
+- Uniformly distributes the hash values
+- Easy to compute
+- Resolve collisions efficiently
+
+## Universal Hashing
+
+- Universal family of hashing functions
+- Choose one hash function uniformly at random
+- Family: $H, \text{ choose }  h \in H$
+
+$$h_{a,b}(x) = [(ax+b)\text{ mod }p] \text{ mod } |A|$$
+
+Where $a \in \{1..p-1\}, \, b \in \{0..p-1\}$ $\implies |H| = p (p-1)$
+
+> [!NOTE]
+> When $x_1 \neq x_2$, then the number of different hash function $h_{a,b}(x_1)=h_{a,b}(x_2)$ is at most $\frac{|H|}{|A|}$
+> $\implies$ If A is large, the probability of a collision is very small ($\frac{1}{|A|}$)
