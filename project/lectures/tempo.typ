@@ -1,3 +1,4 @@
+
 = Lecture 16
 == Why Binary Search Trees?
 #quote(block: true)[
@@ -24,7 +25,7 @@ Time complexity of Insert and Delete is O(H) so the lower bound of H is the best
 For n elements there exist `n!` ways of constructing said binary tree All elements are coming in random order
 
 #quote(block: true)[
-  The Inorder traversal of all n! BSTs is the same (Ascending order)
+  \[!NOTE\] The Inorder traversal of all n! BSTs is the same (Ascending order)
 ]
 
 Assumption: A corner element does not occur 3 consecutive times, or every 3 consecutive elements include at least one middle element.

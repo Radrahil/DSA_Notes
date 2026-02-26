@@ -1,7 +1,9 @@
 = Lecture 16
+<lecture-16>
 == Why Binary Search Trees?
+<why-binary-search-trees>
 #quote(block: true)[
-  What is the height of a BST with n nodes?
+What is the height of a BST with n nodes?
 ]
 
 Height varies from $⌊ log_2 n ⌋ thin upright("to") thin n - 1$
@@ -11,29 +13,34 @@ Time complexity of Insert and Delete is O(H) so the lower bound of H is the best
 #figure(
   align(center)[#table(
     columns: 2,
-    align: (auto, auto),
-    table.header([best case], [$floor(log_2 n)$]),
+    align: (auto,auto,),
+    table.header([best case], [⌊log₂n⌋],),
     table.hline(),
-    [avg case], [$log_2 n$],
+    [avg case], [$n / 2$],
     [worst case], [$n - 1$],
-  )],
-  kind: table,
-)
+  )]
+  , kind: table
+  )
 
 == Proof of log₂n on avg
+<proof-of-log₂n-on-avg>
 For n elements there exist `n!` ways of constructing said binary tree All elements are coming in random order
 
-#quote(block: true)[
-  The Inorder traversal of all n! BSTs is the same (Ascending order)
-]
+#block[
+#block[
+Note
 
+]
+The Inorder traversal of all n! BSTs is the same (Ascending order)
+
+]
 Assumption: A corner element does not occur 3 consecutive times, or every 3 consecutive elements include at least one middle element.
 
 The middle 98% is middle elements, and the left and right 1% are the corner elements.
 
 Let us assume the first element is a middle element, with L subtree bigger than R subtree.
 
-Let us assume the next two elements are corner elements, i.e don’t have two subtrees.
+Let us assume the next two elements are corner elements, i.e don\'t have two subtrees.
 
 After 3 steps, the remaining nodes are at most $99 / 100 n$
 
@@ -42,16 +49,15 @@ After 3k steps, the remaining nodes are at most $(99 / 100^k) n$
 $k = log_n (100 / 99)$
 
 === Issues with this proof
+<issues-with-this-proof>
 - Assumption does not cover all cases
 - Abuse of the Big O notation. In most practical cases the constant is bigger than the function itself
 - Grains of rice proof
 
-$
-  X_(i , j) = cases(delim: "{", 1 & upright("if node ") i upright(" is an ancestor of node ") j, , 0 & upright("otherwise."))
-$
+$ X_(i , j) = cases(delim: "{", 1 & upright("if node ") i upright(" is an ancestor of node ") j ,, 0 & upright("otherwise.")) $
 
 #quote(block: true)[
-  In how many of the 10! BSTs of 1-10 is node 7 an ancestor of node 6?
+In how many of the 10! BSTs of 1-10 is node 7 an ancestor of node 6?
 ]
 
 Relationship of all other nodes with 6 and 7 is identical.
@@ -71,7 +77,7 @@ $P r [X_(9 , 6) = 1]$ ?
 If from 678 any occur before, 9 and 6 are split apart into different subtrees from that element. Thus probability is 1/4
 
 #quote(block: true)[
-  What is the expected depth of node 6?
+What is the expected depth of node 6?
 ]
 
 $frac(2 + 3 + 4 + 2 + 4 + . . ., 10 !)$
@@ -82,13 +88,22 @@ Expected depth = Number of ancestors
 
 $D_6 = X_(1 , 6) + X_(2 , 6) + . . . + X_(10 , 6)$
 
-$ bb(E) [D_6] = bb(E) [X_(1 , 6) + dots.h.c + X_(10 , 6)] $
+= \$\$ \\mathbb{E}\[D\_{6}\]
+<-mathbbed_6>
+\\mathbb{E}\[X\_{1,6} + \\cdots + X\_{10,6}\] \$\$
 
-$ = bb(E) [X_(1 , 6)] + bb(E) [X_(2 , 6)] + dots.h.c + bb(E) [X_(10 , 6)] $
+= \$\$
+\\mathbb{E}\[X\_{1,6}\] + \\mathbb{E}\[X\_{2,6}\] + \\cdots + \\mathbb{E}\[X\_{10,6}\] \$\$
 
-$ = Pr [X_(1 , 6) = 1] + Pr [X_(2 , 6) = 1] + dots.h.c + Pr [X_(10 , 6) = 1] $
+= \$\$
+<-1>
+\\Pr\[X\_{1,6} = 1\] + \\Pr\[X\_{2,6} = 1\] + \\cdots + \\Pr\[X\_{10,6} = 1\] \$\$
 
-$ = (1 / 6 + 1 / 5 + 1 / 4 + 1 / 3 + 1 / 2) + (1 / 2 + 1 / 3 + 1 / 4 + 1 / 5) $
+= \$\$
+<-2>
+\\left(\\frac{1}{6} + \\frac{1}{5} + \\frac{1}{4} + \\frac{1}{3} + \\frac{1}{2}\\right)
+
+- \\left(\\frac{1}{2} + \\frac{1}{3} + \\frac{1}{4} + \\frac{1}{5}\\right) \$\$
 
 Harmonic Sum ($H_n$) = $l o g_e n + gamma$ = $l o g_e n + 0.5772$
 

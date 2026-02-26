@@ -82,24 +82,42 @@ Expected depth = Number of ancestors
 $D_{6} = X_{1,6} + X_{2,6} + ... + X_{10,6}$
 
 $$
-\begin{aligned}
 \mathbb{E}[D_{6}]
-&= \mathbb{E}[X_{1,6} + X_{2,6} + \cdots + X_{10,6}] \\
-&= \mathbb{E}[X_{1,6}] + \mathbb{E}[X_{2,6}] + \cdots + \mathbb{E}[X_{10,6}] \\
-&= \Pr[X_{1,6} = 1] + \Pr[X_{2,6} = 1] + \cdots + \Pr[X_{10,6} = 1] \\
-&= \left(\frac{1}{6} + \frac{1}{5} + \frac{1}{4} + \frac{1}{3} + \frac{1}{2}\right)
+=
+\mathbb{E}[X_{1,6} + \cdots + X_{10,6}]
+$$
+
+$$
+=
+\mathbb{E}[X_{1,6}] + \mathbb{E}[X_{2,6}] + \cdots + \mathbb{E}[X_{10,6}]
+$$
+
+$$
+=
+\Pr[X_{1,6} = 1] + \Pr[X_{2,6} = 1] + \cdots + \Pr[X_{10,6} = 1]
+$$
+
+$$
+=
+\left(\frac{1}{6} + \frac{1}{5} + \frac{1}{4} + \frac{1}{3} + \frac{1}{2}\right)
  + \left(\frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5}\right)
-\end{aligned}
 $$
 
 Harmonic Sum ($H_{n}$) = $log_{e}n + \gamma$ = $log_{e}n + 0.5772$
 
 $$
-\begin{aligned}
 \text{Average depth}
-&\le 2\left( \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{n/2} \right) \\[6pt]
-&\le 2\ln\!\left(\frac{n}{2}\right) + 1.15 \\[6pt]
-&\le 2.88\left(\log_{2} n - \log_{2} 2\right) \\[6pt]
-&\le 2.88\,\log_{2} n
-\end{aligned}
+\le 2\left( \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{n/2} \right)
+$$
+
+$$
+\le 2\ln\left(\frac{n}{2}\right) + 1.15
+$$
+
+$$
+\le 2.88\left(\log_{2} n - \log_{2} 2\right)
+$$
+
+$$
+\le 2.88\,\log_{2} n
 $$

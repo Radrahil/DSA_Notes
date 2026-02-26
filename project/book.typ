@@ -4,15 +4,15 @@
 
 #set heading(numbering: "1.")
 
-// #show text.where(style: "monospace"): box(
-//   fill: rgb("#eeeeee"),
-//   inset: 2pt,
-//   radius: 3pt,
-// )
-//
-// #show text.where(style: "monospace"): set text(
-//   fill: rgb("#222222"),
-// )
+#show text.where(style: "monospace"): box(
+  fill: rgb("#eeeeee"),
+  inset: 2pt,
+  radius: 3pt,
+)
+
+#show text.where(style: "monospace"): set text(
+  fill: rgb("#222222"),
+)
 
 #align(center)[
   #text(22pt, weight: "bold")[Data Structures & Algorithms]
