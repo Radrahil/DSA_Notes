@@ -1,12 +1,4 @@
 = Lecture 8
-- #link(<doubly-ended-queues-dequeues>)[Doubly Ended Queues (Dequeues)]
-- #link(<trees>)[Trees]
-  - #link(<binary-tree>)[Binary Tree]
-  - #link(<full-binary-tree>)[Full Binary Tree]
-  - #link(<complete-binary-tree>)[Complete Binary Tree]
-  - #link(<perfect-binary-tree>)[Perfect Binary Tree]
-  - #link(<balanced-binary-tree>)[Balanced Binary Tree]
-  - #link(<degenerate--pathological-binary-tree>)[Degenerate / Pathological Binary Tree]
 
 == Doubly Ended Queues (Dequeues)
 Insertion and deletion can happen at both ends.

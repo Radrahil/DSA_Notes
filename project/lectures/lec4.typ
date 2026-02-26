@@ -1,18 +1,4 @@
 = Quick Sort
-- #link(<idea>)[Idea]
-- #link(<example>)[Example]
-- #link(<partitioning>)[Partitioning]
-  - #link(<lomuto-partition-scheme>)[Lomuto Partition Scheme]
-- #link(<algorithm>)[Algorithm]
-- #link(<properties>)[Properties]
-- #link(<time-complexity>)[Time Complexity]
-  - #link(<worst-case-explanation>)[Worst Case Explanation]
-- #link(<number-of-comparisons>)[Number of Comparisons]
-- #link(<improving-performance>)[Improving Performance]
-  - #link(<randomized-quick-sort>)[Randomized Quick Sort]
-- #link(<comparison-with-other-sorting-algorithms>)[Comparison with Other Sorting Algorithms]
-- #link(<key-observations>)[Key Observations]
-- #link(<when-to-use-quick-sort>)[When to Use Quick Sort]
 
 == Idea
 Quick Sort is a #strong[divide-and-conquer] sorting algorithm.

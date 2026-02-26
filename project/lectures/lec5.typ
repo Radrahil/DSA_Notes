@@ -1,11 +1,5 @@
 = Lecture 5
 == Table of contents
-- #link(<sort-4-elements-using-4-comparisons>)[Sort 4 elements using 4 comparisons]
-- #link(<stacks>)[Stacks]
-  - #link(<basic-stack-operations>)[Basic Stack Operations]
-- #link(<checking-for-balanced-parentheses>)[Checking For Balanced Parentheses]
-  - #link(<rules-for-balanced-parentheses>)[Rules For Balanced Parentheses]
-  - #link(<algorithm>)[Algorithm]
 
 == Sort 4 elements using 4 comparisons
 It is impossible to guarantee that you can sort 4 numbers using 4

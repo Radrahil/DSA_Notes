@@ -1,10 +1,4 @@
 = Lecture 13
-- #link(<lecture-13>)[Lecture 13]
-  - #link(<heaps>)[Heaps]
-    - #link(<left-justified-or-complete-binary-tree>)[Left-justified (or Complete) binary tree]
-    - #link(<insertion-into-heap>)[Insertion into Heap]
-    - #link(<deletion-from-heap>)[Deletion from Heap]
-    - #link(<heap-as-an-array>)[Heap as an Array]
 
 - Finding min/max -\> O(n) unsorted, O(1) sorted
 - Maintaining min/max

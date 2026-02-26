@@ -1,15 +1,5 @@
 = Lecture 6
 == Table of Contents
-- #link(<evaluating-mathematical-expressions>)[Evaluating Mathematical Expressions]
-  - #link(<evaluation>)[Evaluation]
-  - #link(<infix-notation>)[Infix Notation]
-  - #link(<postfix-notation>)[Postfix Notation]
-    - #link(<advantages-of-postfix>)[Advantages of Postfix]
-    - #link(<rules-for-postfix-evaluation>)[Rules for Postfix Evaluation]
-    - #link(<puzzle>)[Puzzle]
-    - #link(<evaluating-postfix>)[Evaluating Postfix]
-- #link(<queue>)[Queue]
-  - #link(<queue-operations>)[Queue Operations]
 
 == Evaluating Mathematical Expressions
 === Evaluation

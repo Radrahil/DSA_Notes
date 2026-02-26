@@ -1,5 +1,4 @@
 = Lecture 7
-- #link(<queues>)[Queues]
 
 == Queues
 FIFO: First In First Out Data Structure

@@ -1,9 +1,4 @@
 = Data Structures and Algorithms Lecture 1
-- #link(<data-structures-and-algorithms-lecture-1>)[Data Structures and Algorithms Lecture 1]
-  - #link(<sorting>)[Sorting]
-  - #link(<examplesapplications>)[Examples/Applications]
-  - #link(<aim>)[Aim] - #link(<brute-force>)[Brute Force] -
-    #link(<bubble-sort>)[Bubble sort] - #link(<puzzle>)[Puzzle]
 
 == Sorting
 Arrange (or order) a list of numbers in ascending or descending order.

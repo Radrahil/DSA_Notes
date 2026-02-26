@@ -1,11 +1,4 @@
 = Lecture 14
-- #link(<notation>)[Notation]
-- #link(<operations-on-a-heap>)[Operations on a heap]
-- #link(<heapify>)[Heapify]
-  - #link(<sorting>)[Sorting]
-  - #link(<heapify-top-down>)[Heapify top-down]
-  - #link(<heapify-bottom-up>)[Heapify bottom-up]
-- #link(<heap-sort>)[Heap Sort]
 
 == Notation
 n: number of nodes N: Next power of two
