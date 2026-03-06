@@ -3,7 +3,7 @@
 == Why Binary Search Trees?
 <why-binary-search-trees>
 #quote(block: true)[
-What is the height of a BST with n nodes?
+  What is the height of a BST with n nodes?
 ]
 
 Height varies from $⌊ log_2 n ⌋ thin upright("to") thin n - 1$
@@ -13,25 +13,25 @@ Time complexity of Insert and Delete is O(H) so the lower bound of H is the best
 #figure(
   align(center)[#table(
     columns: 2,
-    align: (auto,auto,),
-    table.header([best case], [⌊log₂n⌋],),
+    align: (auto, auto),
+    table.header([best case], [⌊log₂n⌋]),
     table.hline(),
     [avg case], [$n / 2$],
     [worst case], [$n - 1$],
-  )]
-  , kind: table
-  )
+  )],
+  kind: table,
+)
 
 == Proof of log₂n on avg
-<proof-of-log₂n-on-avg>
+<proof-of-logn-on-avg>
 For n elements there exist `n!` ways of constructing said binary tree All elements are coming in random order
 
 #block[
-#block[
-Note
+  #block[
+    Note
 
-]
-The Inorder traversal of all n! BSTs is the same (Ascending order)
+  ]
+  The Inorder traversal of all n! BSTs is the same (Ascending order)
 
 ]
 Assumption: A corner element does not occur 3 consecutive times, or every 3 consecutive elements include at least one middle element.
@@ -54,10 +54,12 @@ $k = log_n (100 / 99)$
 - Abuse of the Big O notation. In most practical cases the constant is bigger than the function itself
 - Grains of rice proof
 
-$ X_(i , j) = cases(delim: "{", 1 & upright("if node ") i upright(" is an ancestor of node ") j ,, 0 & upright("otherwise.")) $
+$
+  X_(i , j) = cases(delim: "{", 1 & upright("if node ") i upright(" is an ancestor of node ") j, , 0 & upright("otherwise."))
+$
 
 #quote(block: true)[
-In how many of the 10! BSTs of 1-10 is node 7 an ancestor of node 6?
+  In how many of the 10! BSTs of 1-10 is node 7 an ancestor of node 6?
 ]
 
 Relationship of all other nodes with 6 and 7 is identical.
@@ -77,7 +79,7 @@ $P r [X_(9 , 6) = 1]$ ?
 If from 678 any occur before, 9 and 6 are split apart into different subtrees from that element. Thus probability is 1/4
 
 #quote(block: true)[
-What is the expected depth of node 6?
+  What is the expected depth of node 6?
 ]
 
 $frac(2 + 3 + 4 + 2 + 4 + . . ., 10 !)$
