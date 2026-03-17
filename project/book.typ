@@ -43,3 +43,6 @@
 #include "lectures/lec15.typ"
 #include "lectures/lec16.typ"
 #include "lectures/lec17.typ"
+#include "lectures/lec18.typ"
+#include "lectures/lec19.typ"
+#include "lectures/lec20.typ"
