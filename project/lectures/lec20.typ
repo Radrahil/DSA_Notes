@@ -83,7 +83,7 @@ Alternatively, since total degree $D$ is even, and sum of total even degrees is 
 
 ```cpp
 BreadthFirstSearch(s) {
-  put(phi, s) into queue Q.
+  put(NULL, s) into queue Q.
   while (Q is non-empty) {
     delete (p, v) from Q
     if (v is not visited)
