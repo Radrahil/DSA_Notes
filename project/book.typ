@@ -49,3 +49,4 @@
 #include "lectures/lec21.typ"
 #include "lectures/lec22.typ"
 #include "lectures/lec23.typ"
+#include "lectures/lec24.typ"
