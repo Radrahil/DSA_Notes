@@ -19,7 +19,7 @@ $ n >= 3 $
 $ 1/n <= 1/3 $
 $ 1 + 2/n <= 2/3 + 1 $
 
-$ n + 2 / n <= 5/3 $
+$ (n + 2) / n <= 5/3 $
 
 Taking logarithms (base $phi$) on both sides, wher $phi approx 1.618$ is the golden ratio,
 
@@ -42,7 +42,7 @@ $ h <= log_phi (n + 2) - 3 + 1.672 $
 $ h <= log_phi n + 1.07 - 3 + 1.672 $
 $ h <= log_phi n - 0.25 $
 $ h <= log_phi n $
-$ h <= log_phi n log_phi 2 $
+$ h <= (log_phi n) / (log_phi 2) $
 $ h <= 1.44log_phi n $
 
 == Graph Theory

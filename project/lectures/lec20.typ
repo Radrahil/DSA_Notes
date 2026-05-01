@@ -46,7 +46,7 @@ Effectively, it's the set of all those vertices that the vertex has an edge to.
   ],
 )
 
-/ Puzzle 2: Draw a graph on 6 vertices where degree of each vertex is 3
+/ Puzzle 2: Draw a graph on 5 vertices where degree of each vertex is 3
 
 This is *IMPOSSIBLE*
 
